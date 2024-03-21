@@ -1,23 +1,22 @@
 # PROJECTNAME
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The goal of the Detection Lab project was to build a realistic environment for simulating and detecting cyber attacks. The primary focus was to build an entire workflow to ingest, log and analyze events within a SIEM that reflect real-world attack scenarios, thereby providing me an opportunity to familiarize myself with the various tools used by Blue Teams to assess and respond to cyber threats on a daily basis. 
 
 ### Skills Learned
 
 - Basic understanding of SIEM concepts and practical application.
 - In-depth understanding of log and event generation on host devices.
-- SOAR workflows for 
+- Implementing SOAR workflows 
 - Ability to generate and recognize attack signatures and patterns.
-- Familiarization with key security frameworks including the MITRE Att&ck framework
+- Increased knowledge of key security frameworks including the MITRE Att&ck framework.
 
 ### Tools Used
 
 - Wazuh - Security Information and Event Management (SIEM) system for log ingestion and analysis.
 - Sysmon - Telemetry generation tools to create realistic security event logs
-- Shuffle SOAR - linking platforms via APIs and 
+- Shuffle SOAR - for security workflow
 
 ## Steps
 
