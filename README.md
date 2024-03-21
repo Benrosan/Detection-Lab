@@ -50,4 +50,21 @@ Also installed **htop** as it's my preferred tool for checking resource use in a
 
 **4.** Installed Sysmon for more detailed event/log capture. It's interesting to note that configuration files for Sysmon can vary greatly and are absolutely essential to security event logging within both Windows and the SIEM. I used Olaf Hartong's <a href="https://github.com/olafhartong/sysmon-modular">config file</a>
 
+![Screenshot 2024-03-21 111708](https://github.com/Benrosan/Detection-Lab/assets/160042310/b9443f7b-2231-4f67-81c1-a7dd0b7a07c0)
+
+**5**. After installing the Wazuh manager, I installed my Wazuh manager on my chosen endpoint. This was done quickly via PoweShell script. I then confirmed the service was running on the host.
+
+![2024-03-21 11_19_53-Services](https://github.com/Benrosan/Detection-Lab/assets/160042310/903e80ea-2b18-46a2-ad6b-423796488bac)
+
+**6.** Next step was to update the config file for Wazuh to have it ingest the Sysmon logs.
+
+![2024-03-21 11_29_11-ossec conf - Notepad](https://github.com/Benrosan/Detection-Lab/assets/160042310/b41c2d29-c4d0-486d-8bf7-ee6d95678a0e)
+
+I then restarted the Wazuh service and confirmed the logs were appearing in the Wazuh dashboard.
+
+![2024-03-21 11_33_48-Wazuh - Wazuh](https://github.com/Benrosan/Detection-Lab/assets/160042310/b811216d-4042-4747-955b-cd2b9d82d049)
+
+
+
+
 
