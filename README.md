@@ -22,10 +22,16 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+1. Used Draw.io to create the network diagram. This highlights basic data flow between the platforms.
+   
+![Screenshot 2024-03-21 104506](https://github.com/Benrosan/Detection-Lab/assets/160042310/f2712f60-5e33-4212-8239-7cad515fbf8e)
 
-Example below.
+2. Second step was to start installing the various platforms. I used a hybrid cloud infrastructure model. I used LXC containers in Proxmox to host Wazuh and TheHive. It's always good practice to configure and launch VMs and containers, especially on a platform as intuitive and flexible as Proxmox. 
+   
+![2024-03-21 10_58_27-pve01 - Proxmox Virtual Environment](https://github.com/Benrosan/Detection-Lab/assets/160042310/293ff2af-9ca5-46a4-bd74-9964b6a66edc)
 
-*Ref 1: Network Diagram*
+I may reduce the resources allocated to some containers as some are being under-utilized.
+
+
+
