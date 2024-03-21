@@ -6,20 +6,18 @@
 The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
+- Basic understanding of SIEM concepts and practical application.
+- In-depth understanding of log and event generation on host devices.
+- SOAR workflows for 
 - Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Familiarization with key security frameworks including the MITRE Att&ck framework
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Wazuh - Security Information and Event Management (SIEM) system for log ingestion and analysis.
+- Sysmon - Telemetry generation tools to create realistic security event logs
+- Shuffle SOAR - linking platforms via APIs and 
 
 ## Steps
 
@@ -89,8 +87,15 @@ It's was interesting to learn more about how custom rules are created, but also 
 
 This was a great opportunity to learn more about key aspects of platform security and management including:<br>
 
-   -**Webhooks** - URIs, Event Triggering, GET/POST request, JSON<br>
+   -**Webhooks**  Event Triggering, GET/POST request, JSON<br>
 <br>
    -**APIs**: self-explanatory. It was nice getting hands-on experience generating and implementing API keys as part of the workflow.<br>
+   <br>
+   -**RegEx**: i.e. matching strings with patterns. Used to pass along the output of the releveant SHA256 hash to VirusTotal.
+
+![Screenshot 2024-03-21 084701](https://github.com/Benrosan/Detection-Lab/assets/160042310/174638f9-b521-46b2-a382-062a036737e6)<br>
+
+
+
 
 
