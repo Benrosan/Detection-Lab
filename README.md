@@ -23,15 +23,31 @@ The Detection Lab project aimed to establish a controlled environment for simula
 
 ## Steps
 
-1. Used Draw.io to create the network diagram. This highlights basic data flow between the platforms.
+**1.** Used Draw.io to create the network diagram. This highlights basic data flow between the platforms.
    
+
 ![Screenshot 2024-03-21 104506](https://github.com/Benrosan/Detection-Lab/assets/160042310/f2712f60-5e33-4212-8239-7cad515fbf8e)
 
-2. Second step was to start installing the various platforms. I used a hybrid cloud infrastructure model. I used LXC containers in Proxmox to host Wazuh and TheHive. It's always good practice to configure and launch VMs and containers, especially on a platform as intuitive and flexible as Proxmox. 
+
+**2.** Second step was to start installing the various platforms. I used a hybrid cloud infrastructure model. I used LXC containers in Proxmox to host Wazuh and TheHive. It's always good practice to configure and launch VMs and containers, especially on a platform as intuitive and flexible as Proxmox. 
    
+
 ![2024-03-21 10_58_27-pve01 - Proxmox Virtual Environment](https://github.com/Benrosan/Detection-Lab/assets/160042310/293ff2af-9ca5-46a4-bd74-9964b6a66edc)
+
 
 I may reduce the resources allocated to some containers as some are being under-utilized.
 
+**3.** Both platforms were installed using the Linux CLI. (Ubuntu 22.04). Used common commands including **cat**, **nano**, **systemctl** etc...
+
+
+![Screenshot 2024-03-21 110518](https://github.com/Benrosan/Detection-Lab/assets/160042310/5e2d12e6-210b-45a0-bd89-458868e87f1e)
+
+
+Also installed **htop** as it's my preferred tool for checking resource use in addition to commands like **top**, **free -h** etc...
+
+
+![Screenshot 2024-03-21 094804](https://github.com/Benrosan/Detection-Lab/assets/160042310/88a67d77-7236-43a0-8fb6-148234a8d5ed)
+
+**4.** Installed Sysmon for more detailed event/log capture. It's interesting to note that configuration files for Sysmon can vary greatly and are absolutely essential to security event logging within both Windows and the SIEM. I used Olaf Hartong's <a href="https://github.com/olafhartong/sysmon-modular">config file</a>
 
 
