@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of the Detection Lab project was to build a realistic environment for simulating and detecting cyber attacks. The primary focus was to build an entire workflow to ingest, log and analyze events within a SIEM that reflect real-world attack scenarios, thereby providing me an opportunity to familiarize myself with the various tools used by Blue Teams to assess and respond to cyber threats on a daily basis. 
+The goal of the Detection Lab project was to build a realistic environment for simulating and detecting cyber attacks. The primary focus was to build an entire workflow to ingest, log and analyze events within a SIEM that reflect real-world attack scenarios, thereby providing me an opportunity to familiarize myself with the various tools/processes used by Blue Teams to assess and respond to cyber threats on a daily basis. 
 
 ### Skills Learned
 
@@ -18,6 +18,7 @@ The goal of the Detection Lab project was to build a realistic environment for s
 - Wazuh - Security Information and Event Management (SIEM) system for log ingestion and analysis.
 - Sysmon - Telemetry generation tools to create realistic security event logs
 - Shuffle SOAR - for security workflow
+- TheHive Security incident Response Platform - for generating alerts
 - Proxmox - used to self host LXC containers for Wazuh and TheHive platforms.
 
 ## Steps
@@ -93,6 +94,26 @@ This was a great opportunity to learn more about key aspects of platform securit
    -**RegEx**: i.e. matching strings with patterns. Used to pass along the output of the releveant SHA256 hash to VirusTotal.
 
 ![Screenshot 2024-03-21 084701](https://github.com/Benrosan/Detection-Lab/assets/160042310/174638f9-b521-46b2-a382-062a036737e6)<br>
+
+The trickiest part of the setp was configuring TheHive to properly generate the alerts. The JSON inputs had to be precisely formatted.<br>
+
+![2024-03-21 12_19_58-Workflow - SOC Automation Project](https://github.com/Benrosan/Detection-Lab/assets/160042310/1b1c14f6-986a-4980-9e5c-c626e304bf24)
+
+<br>
+
+After some troubleshooting, I was eventually able to get the workflow to work properly and generate the necessary alerts in TheHive.
+<br>
+
+![Screenshot 2024-03-21 090215](https://github.com/Benrosan/Detection-Lab/assets/160042310/979282f2-cbed-4283-9b86-154b69e21561)
+
+At this point of I have a fully functioning workflow that sends alerts to TheHive when I launch Mimikatz on my local device. 
+
+### Next Steps
+
+- As the diagram show, the next steps are to continue to work in Shuffle/Wazuh to created an automated response to the threat. At this point however, I feel it would be more beneficial to continue to explore the capabilities of the Wazuh platform and continue to hone skills around log/event analysis, as I feel it's more relevant to a Level 1 SOC Analyst position.
+- While working on the above, I'm also going to start familiarizing myself with Wireshark and deepen my knoweledge of PCAPs and network log analysis.
+
+
 
 
 
