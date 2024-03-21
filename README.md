@@ -8,15 +8,17 @@ The goal of the Detection Lab project was to build a realistic environment for s
 
 - Basic understanding of SIEM concepts and practical application.
 - In-depth understanding of log and event generation on host devices.
-- Implementing SOAR workflows 
+- Implementing SOAR workflows.
 - Ability to generate and recognize attack signatures and patterns.
 - Increased knowledge of key security frameworks including the MITRE Att&ck framework.
+- Basic Linux server management skills
 
 ### Tools Used
 
 - Wazuh - Security Information and Event Management (SIEM) system for log ingestion and analysis.
 - Sysmon - Telemetry generation tools to create realistic security event logs
 - Shuffle SOAR - for security workflow
+- Proxmox - used to self host LXC containers for Wazuh and TheHive platforms.
 
 ## Steps
 
@@ -85,11 +87,9 @@ It's was interesting to learn more about how custom rules are created, but also 
 ![Screenshot 2024-03-21 084603](https://github.com/Benrosan/Detection-Lab/assets/160042310/05c1af6a-ac3d-4f34-ae6c-395322f5a6cc)
 
 This was a great opportunity to learn more about key aspects of platform security and management including:<br>
-
+###
    -**Webhooks**  Event Triggering, GET/POST request, JSON<br>
-<br>
    -**APIs**: self-explanatory. It was nice getting hands-on experience generating and implementing API keys as part of the workflow.<br>
-   <br>
    -**RegEx**: i.e. matching strings with patterns. Used to pass along the output of the releveant SHA256 hash to VirusTotal.
 
 ![Screenshot 2024-03-21 084701](https://github.com/Benrosan/Detection-Lab/assets/160042310/174638f9-b521-46b2-a382-062a036737e6)<br>
